@@ -315,5 +315,5 @@ Sluit altijd af met de volledige disclaimer: "⚠️ GEEN MEDISCH ADVIES: Dit ra
 app.get('/health', (_, res) => res.json({ status: 'ok', time: new Date().toISOString() }));
 
 // ── Start ─────────────────────────────────────────────────────────────────────
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 8080;
 app.listen(PORT, () => console.log(`Injury Radar running on port ${PORT}`));
